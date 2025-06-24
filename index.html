@@ -1,7 +1,4 @@
-import zipfile
-
-# Enhanced HTML with navigation, animations, contact form, and Power BI embed placeholder
-enhanced_html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -44,9 +41,9 @@ enhanced_html = """<!DOCTYPE html>
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Profile Photo" />
+  <img src="C:\Users\mouni\Downloads\unnamed.png" alt="Profile Photo" />
   <h1>Mounish Chowdary Nannuri</h1>
-  <p>Data Engineer | ETL Developer | Cloud Analytics</p>
+  <p>Data Engineer | ETL Developer | MetaData Management</p>
 </header>
 
 <nav>
@@ -123,12 +120,3 @@ enhanced_html = """<!DOCTYPE html>
 
 </body>
 </html>
-"""
-
-# Create a zip archive with the updated content
-enhanced_zip_path = "/mnt/data/Mounish_Advanced_Portfolio_Website.zip"
-with zipfile.ZipFile(enhanced_zip_path, "w") as zipf:
-    zipf.writestr("index.html", enhanced_html)
-    zipf.writestr("profile.jpg", "")  # Placeholder for profile photo
-
-enhanced_zip_path
